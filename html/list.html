@@ -1,63 +1,128 @@
-<body>
-	<header>
-		<div>
-			<div>
-				<a href="./"><img src="logo.png" /></a>
-				<span>VERSIÖN</span>
-			</div>
-			<div>
-				<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
-				<div class="char_dropdown button_small">
-					<div>CREATE A CHARACTER</div>
-					<menu>
-						<a href="/cc?themeId=family&bs=adam">Adam</a>
-						<a href="/cc?themeId=family&bs=eve">Eve</a>
-						<a href="/cc?themeId=family&bs=bob">Bob</a>
-						<a href="/cc?themeId=family&bs=rocky">Rocky</a>
-						<div></div>
-						<!--
-						<a href="/cc?themeId=business&bs=default">Business</a>
-						<a href="/cc?themeId=business&bs=heavy">Heavy</a>
-						<a href="/cc?themeId=business&bs=kid">Kid</a>
-						<div></div>
-						<a href="/cc?themeId=whiteboard&bs=default">Whiteboard</a>
-						<a href="/cc?themeId=whiteboard&bs=kid">Whiteboard (Kid)</a>
-						<div></div>
-						-->
-						<a href="/cc?themeId=anime&bs=guy">Guy (Anime)</a>
-						<a href="/cc?themeId=anime&bs=girl">Girl (Anime)</a>
-						<div></div>
-						<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja Anime)</a>
-						<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja Anime)</a>
-						<div></div>
-						<a href="/cc?themeId=cc2&bs=default">Lil' Peepz</a>
-						<div></div>
-						<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
-						<div></div>
-						<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
-					</menu>
-				</div>
-				<div class="char_dropdown button_small">
-					<div>BROWSE CHARACTERS</div>
-					<menu>
-						<a href="/cc_browser?themeId=family">Comedy World</a>
-						<a href="/cc_browser?themeId=anime">Anime</a>
-						<a href="/cc_browser?themeId=ninjaanime">Ninja Anime</a>
-						<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
-						<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
-						<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
-					</menu>
-				</div>
-				<a href="/go_full" class="button_big">MAKE A VIDEO</a>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Domo Animate - Make your own Domo Animations and Slideshows with GoAnimate's super easy to use tools.</title>
+<meta name="description" content="Domo Animate, Powered by GoAnimate, is a way to easily create Domo animations and slideshows."/>
+<meta name="keywords" content="Animation, eCard, flash free, web 2.0, cartoon, comics, create animations free"/>
+<script type="text/javascript" src="/js/prototype.js"></script>
+<!--script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.1/scriptaculous.js" type="text/javascript"></script-->
+<script type="text/javascript" src="/jsapi"></script>
+<script type="text/javascript"><!--
+var I18N = (function() {
+	var _msgs;
+	return {
+		setMessages : function(msgs) {
+			if (typeof msgs == 'object' && msgs != null)
+				_msgs = msgs;
+			else
+				throw "Invalid object given";
+		},
+		txt : function(key, defaultmsg) {
+			return (typeof _msgs['domo' + '_' + key] == 'undefined' ? defaultmsg : _msgs['domo' + '_' + key]);
+		}
+	};
+})();
+
+I18N.setMessages({});
+// --></script>
+<script src="http://web.archive.org/web/20130507134225js_/http://lightspeed.domo.goanimate.com/static/116/go/js/Gettext.js"></script>
+<script type="text/javascript" src="http://web.archive.org/web/20130507134225js_/http://lightspeed.domo.goanimate.com/static/116/go/po/goserver_js-en_US.json"></script>
+<script type="text/javascript"><!--
+var I18N_LANG = 'en_US';
+var GT = new Gettext({'locale_data': json_locale_data});
+// --></script>
+<script type="text/javascript">var srv_tz_os = -4;</script>
+<script src="http://web.archive.org/web/20130507134225js_/http://lightspeed.domo.goanimate.com/static/116/domo/js/init.js"></script>
+<script src="http://web.archive.org/web/20130507134225js_/http://lightspeed.domo.goanimate.com/static/116/go/js/go2.js"></script>
+<script src="http://web.archive.org/web/20130507134225js_/http://lightspeed.domo.goanimate.com/static/116/go/js/overlay.js"></script>
+<link href="http://web.archive.org/web/20130507134225cs_/http://lightspeed.domo.goanimate.com/static/116/go/css/overlay.css" rel="stylesheet" type="text/css"/>
+<script src="http://web.archive.org/web/20130507134225js_/http://lightspeed.domo.goanimate.com/static/116/go/js/image.js"></script>
+<script src="http://web.archive.org/web/20130507134225js_/http://lightspeed.domo.goanimate.com/static/116/go/js/overlay.js"></script>
+<script src="http://web.archive.org/web/20130507134225js_/http://lightspeed.domo.goanimate.com/static/116/go/js/gotabs.js"></script>
+<script src="http://web.archive.org/web/20130507134225js_/http://lightspeed.domo.goanimate.com/static/116/go/js/swfobject.js"></script>
+<script src="http://web.archive.org/web/20130507134225js_/http://lightspeed.domo.goanimate.com/static/116/domo/js/index.js"></script>
+<link href="http://web.archive.org/web/20130507134225cs_/http://lightspeed.domo.goanimate.com/static/116/domo/css/global.css" rel="stylesheet" type="text/css"/>
+<link href="http://web.archive.org/web/20130507134225cs_/http://lightspeed.domo.goanimate.com/static/116/domo/css/index.css" rel="stylesheet" type="text/css"/>
+<link href="http://web.archive.org/web/20130507134225cs_/http://lightspeed.domo.goanimate.com/static/116/domo/css/star_rating.css" rel="stylesheet" type="text/css"/>
+<link href="http://web.archive.org/web/20130507134225cs_/http://lightspeed.domo.goanimate.com/static/116/domo/css/overlay.css" rel="stylesheet" type="text/css"/>
+<script defer type="text/javascript" src="http://web.archive.org/web/20130507134225js_/http://lightspeed.domo.goanimate.com/static/116/go/js/pngfix.js"></script>
+
+<link rel="alternate" href="/web/20130507134225/http://domo.goanimate.com/site/mostwatched.rss" type="application/rss+xml" title="Domo - Most Watched">
+
+</head>
+<div class="container">
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logoonly">
+        	        </div>
+        
+        <div class="globalnav">
+	    
+	    <div style="float:right">
+            	                <a href="javascript:showSignup(250);" class="gnavitem_r" style="color:white">Sign Up</a>
+		<img src="http://web.archive.org/web/20130507134225im_/http://lightspeed.domo.goanimate.com/static/116/go/img/v2/gray_short_line_graybar.gif" style="float:left;padding-top:10px;"/>
+                <a href="javascript:showLogin(250);" class="gnavitem_r" style="color:white">Login</a>
+						<img src="http://web.archive.org/web/20130507134225im_/http://lightspeed.domo.goanimate.com/static/116/go/img/v2/gray_short_line_graybar.gif" style="float:left;padding-top:10px;"/>
+                <a href="http://web.archive.org/web/20130507134225/http://domo.goanimate.com/searchresults" class="gnavitem_r" style="color:white">Search</a>
+		<img src="http://web.archive.org/web/20130507134225im_/http://lightspeed.domo.goanimate.com/static/116/go/img/v2/gray_short_line_graybar.gif" style="float:left;padding-top:10px;"/>
+                <a href="http://web.archive.org/web/20130507134225/http://domo.goanimate.com/faq" class="gnavitem_r" style="color:white">Help</a>
+		<img src="http://web.archive.org/web/20130507134225im_/http://lightspeed.domo.goanimate.com/static/116/go/img/v2/gray_short_line_graybar.gif" style="float:left;padding-top:10px;"/>
+                <a href="http://web.archive.org/web/20130507134225/http://www.domonation.com/" class="gnavitem_r" style="color:white;padding-right:0px;">Domo Nation</a>
+	    </div>
+        </div>
+        
+	
+	<!-- Top menu Ends -->
+	<a name="skipmenu"></a>
+
+
+    </div>
+    <div class="main_nav">
+	<div class="nav_item"><a class="watch" href="http://web.archive.org/web/20130507134225/http://domo.goanimate.com/watch"></a></div>
+	<div class="nav_item"><img src="http://web.archive.org/web/20130507134225im_/http://lightspeed.domo.goanimate.com/static/116/domo/img/common/div_nav.gif"></div>
+	<div class="nav_item"><a class="community" href="http://web.archive.org/web/20130507134225/http://domo.goanimate.com/mingle"></a></div>
+	<div class="nav_item"><img src="http://web.archive.org/web/20130507134225im_/http://lightspeed.domo.goanimate.com/static/116/domo/img/common/div_nav.gif"></div>
+	<div class="nav_item"><a class="create" href="http://web.archive.org/web/20130507134225/http://domo.goanimate.com/create"></a></div>
+	<div class="nav_item"><img src="http://web.archive.org/web/20130507134225im_/http://lightspeed.domo.goanimate.com/static/116/domo/img/common/div_nav.gif"></div>
+	<div class="nav_rspace"></div>
+	<a href="http://web.archive.org/web/20130507134225/http://goanimate.com/" alt="goanimate.com"><div class="poweredby" style="background:none"><img src="http://web.archive.org/web/20130507134225im_/http://lightspeed.domo.goanimate.com/static/116/domo/img/common/logo_goanimate.gif" alt="Video Maker Powered by GoAnimate"></div></a>
+    </div>
+	<!-- END OF HEADER -->
+    <!-- MAIN CONTENT -->
+    <div class="frame">
+    <div class="content">
+    <div id="feedback_block">
+    	    <div id="feedback" align="center" class="error">
+    		    Your account has been verified, please go ahead and login.	    </div>
+    </div>
+	<!-- END OF HEADER -->
+            <span id="cookieErr"></span>
+
+<div class="animate_now_area">
+	<div id="animatenow_v">
+		<div class="animate_now" id="animate_now">
+			<div id="advertisement_block">
+				<script type="text/javascript" src="/web/20130507134225js_/http://domo.goanimate.com/images/swfobject.js"></script>
+				<!-- rater starts -->				
+				<div id="ads3">
+					This content requires the Macromedia Flash Player. <a href="http://web.archive.org/web/20130507134225/http://www.macromedia.com/go/getflash/">Get Flash</a>
+				</div>			
+				<div class="rate_ani">		
+					<script type="text/javascript">
+						var so = new SWFObject("/static/animation/banner.swf", "ads", "930", "320", "8", "#000000");
+						so.addParam("scale", "exactfit");
+						so.addParam("wmode", "transparent");
+						so.addVariable("type", 'signup');
+						so.addVariable("slideshowDownstairCallback", "javascript:showPreviewOverlay('0xmy3dburWwM', 'Domo Theme Demo', 80)");
+						so.addVariable("slideshowUpstairCallback", "javascript:showPreviewOverlay('02QYEtaHdeJo', 'Domo Random Demo', 80)");
+						so.write("ads3");
+					</script>		
+				</div>	
 			</div>
 		</div>
-		<div class="warning"><strong>I was just notified by Spark that GoAnimate Inc. wanted me to <a
-					href="https://media.discordapp.net/attachments/741394845679091792/778077861650759711/unknown.png">cease
-					development on Wrapper</a> ... again.</strong><br>This instance of Wrapper will be taken down any
-			time before
-			2020-11-17 09:00 UTC.<br><a href='https://github.com/GoAnimate-Wrapper/GoAnimate-Wrapper/projects/1'>Link
-				to a progress map of the project on GitHub</a>
-		</div>
+	</div>
 	</header>
 	<table>
 		<thead>
