@@ -33,78 +33,12 @@ module.exports = function (req, res, url) {
 
 	var attrs, params, title;
 	switch (url.pathname) {
-		case "/cc": {
-			title = "Character Creator";
-			attrs = {
-				data: process.env.SWF_URL + "/cc.swf", // data: 'cc.swf',
-				type: "application/x-shockwave-flash",
-				id: "char_creator",
-				width: "100%",
-				height: "100%",
-			};
-			params = {
-				flashvars: {
-					apiserver: "/",
-					storePath: process.env.STORE_URL + "/<store>",
-					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
-					original_asset_id: query["id"] || null,
-					themeId: "business",
-					ut: 60,
-					bs: "default",
-					appCode: "go",
-					page: "",
-					siteId: "go",
-					m_mode: "school",
-					isLogin: "Y",
-					isEmbed: 1,
-					ctc: "go",
-					tlang: "en_US",
-				},
-				allowScriptAccess: "always",
-				movie: process.env.SWF_URL + "/cc.swf", // 'http://localhost/cc.swf'
-			};
-			break;
-		}
-
-		case "/cc_browser": {
-			title = "CC Browser";
-			attrs = {
-				data: process.env.SWF_URL + "/cc_browser.swf", // data: 'cc_browser.swf',
-				type: "application/x-shockwave-flash",
-				id: "char_creator",
-				width: "100%",
-				height: "100%",
-			};
-			params = {
-				flashvars: {
-					apiserver: "/",
-					storePath: process.env.STORE_URL + "/<store>",
-					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
-					original_asset_id: query["id"] || null,
-					themeId: "family",
-					ut: 60,
-					appCode: "go",
-					page: "",
-					siteId: "go",
-					m_mode: "school",
-					isLogin: "Y",
-					isEmbed: 1,
-					ctc: "go",
-					tlang: "en_US",
-					lid: 13,
-				},
-				allowScriptAccess: "always",
-				movie: process.env.SWF_URL + "/cc_browser.swf", // 'http://localhost/cc_browser.swf'
-			};
-			break;
-		}
-
-		case "/go_full": {
+                case "/studio": {
 			let presave =
 				query.movieId && query.movieId.startsWith("m")
 					? query.movieId
 					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
-			title = "Video Editor";
+			title = "Domo Animate - Create animations";
 			attrs = {
 				data: process.env.SWF_URL + "/go_full.swf",
 				type: "application/x-shockwave-flash",
@@ -115,14 +49,14 @@ module.exports = function (req, res, url) {
 				flashvars: {
 					apiserver: "/",
 					storePath: process.env.STORE_URL + "/<store>",
-					isEmbed: 1,
-					ctc: "go",
+					isEmbed: 0,
+					ctc: "domo",
 					ut: 50,
 					bs: "default",
 					appCode: "go",
 					page: "",
-					siteId: "go",
-					lid: 13,
+					siteId: "7",
+					lid: 7,
 					isLogin: "Y",
 					retut: 1,
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
@@ -139,8 +73,8 @@ module.exports = function (req, res, url) {
 			break;
 		}
 
-		case "/player": {
-			title = "Player";
+		case "/movie": {
+			title = "Domo Animate - Watch your animation";
 			attrs = {
 				data: process.env.SWF_URL + "/player.swf",
 				type: "application/x-shockwave-flash",
