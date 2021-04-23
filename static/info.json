@@ -47,8 +47,34 @@
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
+		},
+		"/js/([^?]+js).*": {
+			"contentReplace": true,
+			"regexLink": "/js/$1",
+			"headers": {
+				"Content-Type": "text/js; charset=UTF-8"
+			}
+		},
+		"/js/([^?]+).*": {
+			"regexLink": "/js/$1",
+			"headers": {
+				"Content-Type": "text/js; charset=UTF-8"
+			}
+		},
+		"/css/([^?]+css).*": {
+			"contentReplace": true,
+			"regexLink": "/css/$1",
+			"headers": {
+				"Content-Type": "text/css; charset=UTF-8"
+			}
+		},
+		"/css/([^?]+).*": {
+			"regexLink": "/css/$1",
+			"headers": {
+				"Content-Type": "text/css; charset=UTF-8"
+			}
 		}
-	},
+	},	
 	"POST": {
 		"/goapi/getUserWatermarks/": {
 			"headers": {
