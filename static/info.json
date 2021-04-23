@@ -73,6 +73,19 @@
 			"headers": {
 				"Content-Type": "text/css; charset=UTF-8"
 			}
+		},
+		"/po/([^?]+po).*": {
+			"contentReplace": true,
+			"regexLink": "/po/$1",
+			"headers": {
+				"Content-Type": "application/json; charset=UTF-8"
+			}
+		},
+		"/po/([^?]+).*": {
+			"regexLink": "/po/$1",
+			"headers": {
+				"Content-Type": "application/json; charset=UTF-8"
+			}
 		}
 	},	
 	"POST": {
